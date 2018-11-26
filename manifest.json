@@ -1,0 +1,21 @@
+{
+    "id": "ADD_ID_HERE",
+    "name": "Artboard QuickNav",
+    "version": "1.0.0",
+
+    "description": "",
+
+    "host": {
+        "app": "XD",
+        "minVersion": "14.0.0"
+    },
+
+    "uiEntryPoints": [
+        {
+            "type": "menu",
+            "label": "Artboard QuickNav",
+            "commandId": "quickNav",
+            "shortcut": { "mac": "Cmd+Shift+O", "win": "Ctrl+Shift+O" }
+        }
+    ]
+}
