@@ -3,7 +3,10 @@
     "name": "Artboard QuickNav",
     "version": "1.0.0",
 
-    "description": "",
+    "description": "Quickly jump between artboards, searching by name.\n\nThis plugin is open source and only 150 lines of code!",
+    "icons": [
+        { "width": 96, "height": 96, "path": "icon@2x.png" }
+    ],
 
     "host": {
         "app": "XD",
@@ -15,7 +18,7 @@
             "type": "menu",
             "label": "Artboard QuickNav",
             "commandId": "quickNav",
-            "shortcut": { "mac": "Cmd+Shift+O", "win": "Ctrl+Shift+O" }
+            "shortcut": { "mac": "Cmd+Opt+O", "win": "Ctrl+Alt+O" }
         }
     ]
 }
