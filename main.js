@@ -152,10 +152,26 @@ function quickNav(selection, root) {
 
 function gotoArtboard(artboard) {
     var bounds = artboard.globalBounds;
-    Viewport.scrollToCenter(
-        bounds.x + artboard.width / 2,
-        bounds.y + artboard.height / 2
-    );
+    var viewport = Viewport.bounds;
+
+    // Include artboard title label in bounds we're centering
+    const LABEL_HT = 18 / Viewport.zoomFactor;
+    bounds.y -= LABEL_HT;
+    bounds.height += LABEL_HT;
+
+    if (bounds.width <= viewport.width && bounds.height <= viewport.height) {
+        // If entire bounds fits, center it
+        Viewport.scrollToCenter(
+            bounds.x + bounds.width / 2,
+            bounds.y + bounds.height / 2
+        );
+    } else {
+        // Otherwise, place UL of bounds in UL of viewport
+        Viewport.scrollToCenter(
+            bounds.x - 13 + viewport.width / 2,
+            bounds.y - 10 + viewport.height / 2
+        );
+    }
 }
 
 module.exports = {
