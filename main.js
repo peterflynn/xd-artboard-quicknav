@@ -104,7 +104,7 @@ function quickNav(selection, root) {
         }
         </style>
         <form method="dialog">
-            <h1>Artboard QuickNav</h1>
+            <h1>Artboard Quick Navigate</h1>
             <hr>
             <div class="row">
                 <input type="text" uxp-quiet="true" id="input" />

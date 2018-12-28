@@ -1,5 +1,7 @@
 [Adobe XD](https://www.adobe.com/products/xd.html) plugin to quickly jump to a specific artboard.
 
+<img alt="screenshot" src="docs-images/screenshot@2x.png" width="352">
+
 * Type to search artboards by name
 * Press Enter to jump to the top artboard
 * Use arrow keys to navigate other matching names
@@ -8,7 +10,7 @@
 ## How to install this plugin
 
 1. Launch XD and go to _Plugins > Discover Plugins_
-2. Search for "Artboard QuickNav"
+2. Search for "Artboard Quick Navigate"
 3. Click Install
 
 If you have any problems, please report an issue at https://github.com/peterflynn/xd-artboard-quicknav/issues.
