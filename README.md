@@ -3,8 +3,8 @@
 <img alt="screenshot" src="docs-images/screenshot@2x.png" width="352">
 
 * Type to search artboards by name
-* Press Enter to jump to the top artboard
-* Use arrow keys to navigate other matching names
+* Press Enter to jump to the top search result
+* Use arrow keys to navigate the top 5 matching results
 * Press Escape to go back to your previous view
 
 ## How to install this plugin
