@@ -122,18 +122,22 @@ function quickNav(selection, root) {
         updateList(input.value);
     });
     input.addEventListener("keydown", function (event) {
-        if (event.code === "ArrowDown") {
+        console.log(event.code);
+        if (event.code === "ArrowDown" || event.code === "DownArrow") {
             if (filtered.length && selectedI < filtered.length - 1) {
                 selectedI++;
                 gotoArtboard(filtered[selectedI]);
                 rerenderList();
             }
-        } else if (event.code === "ArrowUp") {
+        } else if (event.code === "ArrowUp" || event.code === "UpArrow") {
             if (filtered.length && selectedI > 0) {
                 selectedI--;
                 gotoArtboard(filtered[selectedI]);
                 rerenderList();
             }
+        } else if (event.code === "Enter") {
+            gotoArtboard(filtered[selectedI]);
+            dialog.remove();
         }
     });
 
